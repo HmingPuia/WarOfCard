@@ -1,0 +1,58 @@
+html,body{
+    margin:0;
+    padding: 0;
+    background-image: url('./img/table-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+h2{
+    color: white;
+}
+h3{
+    color: white;
+}
+button{
+    background-color: rgb(21, 177, 156);
+    cursor: pointer;
+    border: none;
+    color: white;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+button#new-deck {
+    align-self: flex-start;
+    padding: 5px;
+}
+
+div.card-slot {
+    border: 1px solid white;
+    border-radius: 5px;
+    height: 120px;
+    width: calc(120px * 5 / 7);
+}
+div.card-slot:nth-of-type(1) {
+    margin-bottom: 20px;
+}
+img.card{
+    width: 100%;
+}
+div.top{
+    display: flex;
+    align-self: flex-start;
+    color: white;
+}
+div.top>p{
+    margin:0;
+    margin-left: 10px;
+}
+button:disabled {
+    cursor: not-allowed;
+}
